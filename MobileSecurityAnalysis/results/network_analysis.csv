@@ -1,0 +1,16 @@
+﻿source,hierarchy_path,protocol,frames,bytes,note
+captures\diva_final_test.pcap,frame,frame,151,30112,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth,eth,151,30112,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ipv6,ipv6,46,11992,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ipv6 > icmpv6,icmpv6,21,2226,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ipv6 > udp,udp,25,9766,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ipv6 > udp > mdns,mdns,25,9766,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip,ip,101,17908,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > igmp,igmp,8,432,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > tcp,tcp,51,6334,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > tcp > http,http,4,1604,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > tcp > tls,tls,6,2220,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > udp,udp,42,11142,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > udp > dns,dns,17,1876,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > ip > udp > mdns,mdns,25,9266,Nested hierarchy count; parent and child values overlap and must not be summed.
+captures\diva_final_test.pcap,frame > eth > arp,arp,4,212,Nested hierarchy count; parent and child values overlap and must not be summed.

@@ -1,0 +1,10 @@
+﻿event_id,source,timestamp,log_line,event_type,observed_value,evidence_level,limitation
+FRIDA-ATTACH,frida_runtime_output.txt,,,Frida attachment,Frida 17.24.3 attached to jakhar.aseem.diva,Confirmed,Attachment alone shows no vulnerability.
+FRIDA-HOOK,frida_runtime_output.txt,,,Hook installed,"android.util.Log.e(String, String)",Confirmed,Only this overload is hooked.
+FRIDA-LOG-1,frida_runtime_output.txt,,,Intercepted Log.e,"Error while processing transaction with credit card: 1234567890",Confirmed,Dummy test value.
+FRIDA-LOG-2,frida_runtime_output.txt,,,Intercepted Log.e,"Error while processing transaction with credit card: 0987665443322111",Confirmed,Dummy test value.
+LOGCAT-1,diva_dynamic_logcat.txt,10-30 15:47:26,51,logcat E/diva-log,Error while processing transaction with credit card: 0987654321,Confirmed,A log entry is not proof of outside disclosure.
+LOGCAT-2,diva_dynamic_logcat.txt,10-30 15:47:56,85,logcat E/diva-log,Error while processing transaction with credit card: 0987654321,Confirmed,A log entry is not proof of outside disclosure.
+LOGCAT-3,diva_dynamic_logcat.txt,10-30 15:49:25,174,logcat E/diva-log,Error while processing transaction with credit card: 0987654321,Confirmed,A log entry is not proof of outside disclosure.
+SQL-001,screenshot S51,,,SQL injection input,"Screenshot S51 shows a record (admin) returned for the input ' OR '1'='1. The number of records and the executed SQL were not captured, and sql_injection_logcat.txt holds no query or record text.",Partly evidenced,Record count not verified.
+NET-001,diva_final_test.pcap,31 Oct 2026 02:18 UTC,,Packet capture,"151 frames, 30,112 bytes, 80 min",Confirmed,Android background traffic; not tied to DIVA.
